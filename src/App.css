@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #FDF8F5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 176, 255) 0%,
+    rgb(0, 232, 236) 100%
+  );  
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login  {
+  padding: 60px;
+  margin: auto;
+  margin-top: 150px;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url("https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80");
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.login .loginContainer label {
+  color: lightgray;
+  margin: 14px 0;
+  display: block;
+  font-size: 18px;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .btnContainer p span:hover {
+  color: red;
+}
+
+.login  .errorMsg {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
 }
